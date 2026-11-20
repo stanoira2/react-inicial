@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef1f6;
+  color: #1e293b;
+}
+
+/* Móvil: una tarjeta debajo de la otra */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* Pantallas grandes: tarjetas una al lado de la otra */
+@media (min-width: 768px) {
+  .contenedor {
+    flex-direction: row;
+  }
+}
+
+.tarjeta {
+  flex: 1;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.tarjeta h3 {
+  color: #4f46e5;
+}
+
+.tarjeta p {
+  line-height: 1.5;
+}
